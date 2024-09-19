@@ -6,9 +6,11 @@
 /*   By: calguaci <calguaci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/16 17:07:52 by calguaci          #+#    #+#             */
-/*   Updated: 2024/09/18 21:49:02 by calguaci         ###   ########.fr       */
+/*   Updated: 2024/09/19 20:05:10 by calguaci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <libft.h>
 
 int	ft_strlen(char *str)
 {
@@ -49,15 +51,15 @@ unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
 	return (dlen + slen);
 }
 
- int main() 
-{
-#include <stdio.h>
-    char dest[20] = "Hello";
-    char src[] = ", world!";
-    unsigned int size = 0;
-    unsigned int result = ft_strlcat(dest, src, size);
-    printf("Resultado de ft_strlcat: %u\n", result);
-    printf("Cadena resultante: '%s'\n", dest);
+//  int main() 
+// {
+// #include <stdio.h>
+//     char dest[20] = "Hello";
+//     char src[] = ", world!";
+//     unsigned int size = 0;
+//     unsigned int result = ft_strlcat(dest, src, size);
+//     printf("Resultado de ft_strlcat: %u\n", result);
+//     printf("Cadena resultante: '%s'\n", dest);
 
-    return 0;
-} 
+//     return 0;
+// } 

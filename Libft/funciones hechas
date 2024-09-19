@@ -1,0 +1,10 @@
++isalpha   +toupper
++isdigit   +tolower
++isalnum   -strchr
++isascii
++isprint   +strncmp
++strlen    -memchr
++memset    -memcmp
++bzero     -strnstr
++strlcpy   -atoi
++strlcat   

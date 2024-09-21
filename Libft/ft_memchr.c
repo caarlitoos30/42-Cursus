@@ -1,30 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: calguaci <calguaci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/18 20:07:43 by calguaci          #+#    #+#             */
-/*   Updated: 2024/09/21 18:36:49 by calguaci         ###   ########.fr       */
+/*   Created: 2024/09/21 16:52:29 by calguaci          #+#    #+#             */
+/*   Updated: 2024/09/21 17:24:08 by calguaci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strchr(const char *str, size_t i)
-
+void	*ft_memchr(const void *s, int c, size_t n)
 {
-	while ((*str != '\0') && (*str != (char)i))
-		str++;
-	if (*str == (char)i)
-		return ((char *)str);
+	size_t		i;
+
+	i = 0;
+	while (i < n)
+	{
+		if (*((unsigned char *)s + i) == (unsigned char)c)
+			return ((void *)s + i);
+		i++;
+	}
 	return (0);
 }
-
-// #include <stdio.h>
-// int main(void)
-// {
-//     printf("%s\n", ft_strchr("Hola, mundo!", 'm'));
-//     return 0;
-// }

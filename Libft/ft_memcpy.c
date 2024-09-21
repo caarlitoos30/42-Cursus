@@ -1,30 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: calguaci <calguaci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/18 20:07:43 by calguaci          #+#    #+#             */
-/*   Updated: 2024/09/21 18:36:49 by calguaci         ###   ########.fr       */
+/*   Created: 2024/09/21 14:25:05 by calguaci          #+#    #+#             */
+/*   Updated: 2024/09/21 19:11:29 by calguaci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strchr(const char *str, size_t i)
-
+void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
-	while ((*str != '\0') && (*str != (char)i))
-		str++;
-	if (*str == (char)i)
-		return ((char *)str);
-	return (0);
+	size_t		i;
+
+	if (dest == src || !n)
+		return (dest);
+	i = 0;
+	while (i < n)
+	{
+		*((char *)dest + i) = *((char *)src + i);
+		i++;
+	}
+	return (dest);
 }
 
-// #include <stdio.h>
-// int main(void)
-// {
-//     printf("%s\n", ft_strchr("Hola, mundo!", 'm'));
-//     return 0;
-// }
+int main(void)
+{
+    char src[] = "hola buenos dias";
+    char dest[1];
+    ft_memcpy(dest, src, strlen(src) + 1);  
+
+    printf("Contenido de dest después de ft_memcpy: %s\n", dest);
+
+    return 0;
+}

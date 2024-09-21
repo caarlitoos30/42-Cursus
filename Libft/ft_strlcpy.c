@@ -6,11 +6,11 @@
 /*   By: calguaci <calguaci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/16 16:48:11 by calguaci          #+#    #+#             */
-/*   Updated: 2024/09/19 20:04:58 by calguaci         ###   ########.fr       */
+/*   Updated: 2024/09/21 16:31:46 by calguaci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 unsigned int	ft_strlcpy(char *dest, char *src, size_t size)
 

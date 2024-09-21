@@ -6,5 +6,6 @@
 +strlen    -memchr
 +memset    -memcmp
 +bzero     -strnstr
++memcpy
 +strlcpy   -atoi
 +strlcat   

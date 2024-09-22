@@ -1,30 +1,54 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: calguaci <calguaci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/18 20:07:43 by calguaci          #+#    #+#             */
-/*   Updated: 2024/09/22 03:33:06 by calguaci         ###   ########.fr       */
+/*   Created: 2024/09/22 01:50:58 by calguaci          #+#    #+#             */
+/*   Updated: 2024/09/22 20:17:21 by calguaci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strchr(const char *str, size_t i)
-
+void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	while ((*str != '\0') && (*str != (char)i))
-		str++;
-	if (*str == (char)i)
-		return ((char *)str);
-	return (0);
+	size_t	i;
+	char	*d;
+	char	*s;
+
+	if (dest == NULL && src == NULL)
+		return (NULL);
+	i = 0;
+	d = (char *)dest;
+	s = (char *)src;
+	if (s < d)
+	{
+		while (n--)
+			d[n] = s[n];
+	}
+	else
+	{
+		while (i < n)
+		{
+			d[i] = s[i];
+			i++;
+		}
+	}
+	return (dest);
 }
 
 // #include <stdio.h>
 // int main(void)
 // {
-//     printf("%s\n", ft_strchr("Hola, undo!", 'm'));
+//     char src[] = "Hola";
+//     char dest[5];  
+
+//     ft_memmove(dest, src, 5);  
+
+//     printf("src: %s\n", src);
+//     printf("dest: %s\n", dest);
+
 //     return 0;
 // }

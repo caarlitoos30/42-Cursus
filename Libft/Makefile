@@ -15,6 +15,9 @@ SRCS		= ft_memset.c \
 			  ft_isprint.c \
 			  ft_tolower.c \
 			  ft_toupper.c \
+			  ft_memmove.c \
+			  ft_strrchr.c \
+			  ft_memcmp.c \
 
 
 FLAGS		= -Wall -Werror -Wextra

@@ -4,15 +4,15 @@
 +isascii   +strrchr
 +isprint   +strncmp
 +strlen    +memchr
-+memset    -memcmp
++memset    +memcmp
 +bzero     -strnstr
 +memcpy
 +memmove
-+strlcpy   -atoi
++strlcpy   +atoi
 +strlcat   
 
-remaining : 3
-done : 18
+remaining : 1
+done : 20
 
 SEGUNDA PARTE 
 

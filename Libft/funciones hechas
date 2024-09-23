@@ -11,8 +11,8 @@
 +strlcpy   +atoi
 +strlcat   
 
-remaining : 1
-done : 20
+remaining : 0
+done : 21
 
 SEGUNDA PARTE 
 
@@ -22,11 +22,11 @@ SEGUNDA PARTE
 -ft_split
 -ft_itoa
 -ft_strmapi
--ft_striteri
--ft_putchar_fd
++ft_striteri
++ft_putchar_fd
 -ft_putstr_fd
--ft_putendl_fd
++ft_putendl_fd
 -ft_putnbr_fd
 
-remaining : 11
-done: 0
+remaining : 8
+done : 3

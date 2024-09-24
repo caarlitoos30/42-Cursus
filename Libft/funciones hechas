@@ -9,9 +9,10 @@
 +memcpy
 +memmove
 +strlcpy   +atoi
-+strlcat   
++strlcat   -calloc
+-strdup
 
-remaining : 0
+remaining : 2
 done : 21
 
 SEGUNDA PARTE 
@@ -24,7 +25,7 @@ SEGUNDA PARTE
 -ft_strmapi
 +ft_striteri
 +ft_putchar_fd
--ft_putstr_fd
++ft_putstr_fd
 +ft_putendl_fd
 -ft_putnbr_fd
 

@@ -6,7 +6,7 @@
 /*   By: calguaci <calguaci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 23:17:36 by calguaci          #+#    #+#             */
-/*   Updated: 2024/09/23 23:17:55 by calguaci         ###   ########.fr       */
+/*   Updated: 2024/09/24 19:01:48 by calguaci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,4 +23,3 @@ void	ft_putchar_fd(char c, int fd)
 // ft_putchar_fd(h, 1);
 // return (0);
 // }
-

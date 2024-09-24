@@ -16,3 +16,11 @@ void	ft_putchar_fd(char c, int fd)
 {
 	write(fd, &c, 1);
 }
+
+// int main()
+// {
+// char h = 'A';
+// ft_putchar_fd(h, 1);
+// return (0);
+// }
+

@@ -9,7 +9,7 @@
 +memcpy
 +memmove
 +strlcpy   +atoi
-+strlcat   -calloc
++strlcat   +calloc
 -strdup
 
 remaining : 2
@@ -29,5 +29,5 @@ SEGUNDA PARTE
 +ft_putendl_fd
 -ft_putnbr_fd
 
-remaining : 8
-done : 3
+remaining : 7
+done : 4

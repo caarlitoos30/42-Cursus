@@ -6,7 +6,7 @@
 /*   By: calguaci <calguaci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 17:44:02 by calguaci          #+#    #+#             */
-/*   Updated: 2024/09/25 19:33:27 by calguaci         ###   ########.fr       */
+/*   Updated: 2024/09/25 22:34:13 by calguaci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,9 @@ void	*ft_calloc(size_t count, size_t size)
 	void	*result;
 
 	result = malloc(count * size);
-	if (result == NULL)
-		return (NULL);
-	ft_bzero(result, size * count);
+	if (!result)
+		return (0);
+	ft_bzero(result, count * size);
 	return (result);
 }
 // #include <stdio.h>

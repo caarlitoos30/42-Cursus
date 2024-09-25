@@ -5,7 +5,7 @@
 +isprint   +strncmp
 +strlen    +memchr
 +memset    +memcmp
-+bzero     -strnstr
++bzero     +strnstr
 +memcpy
 +memmove
 +strlcpy   +atoi

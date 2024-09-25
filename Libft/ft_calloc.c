@@ -1,36 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: calguaci <calguaci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/22 19:46:21 by calguaci          #+#    #+#             */
-/*   Updated: 2024/09/25 20:39:11 by calguaci         ###   ########.fr       */
+/*   Created: 2024/09/25 17:44:02 by calguaci          #+#    #+#             */
+/*   Updated: 2024/09/25 19:33:27 by calguaci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strrchr(const char *s, int c)
+void	*ft_calloc(size_t count, size_t size)
 {
-	int	i;
+	void	*result;
 
-	i = 0;
-	while (s[i])
-		i++;
-	while (i >= 0)
-	{
-		if (s[i] == (char)c)
-			return ((char *)(s + i));
-		i--;
-	}
-	return (0);
+	result = malloc(count * size);
+	if (result == NULL)
+		return (NULL);
+	ft_bzero(result, size * count);
+	return (result);
 }
-
 // #include <stdio.h>
-// int main(void)
+// int main() 
+
 // {
-//     printf("%s\n", ft_strrchr("Hola, mundo!", 'm'));
+//     int *arr = (int *)ft_calloc(-15, sizeof(int));
+
+//     if (!arr) {
+//         printf("Error al asignar memoria\n");
+//         return 1;
+//     }
+
+//     printf("Primer valor: %d\n", arr[0]);
+
+//     free(arr); 
 //     return 0;
 // }

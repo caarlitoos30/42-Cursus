@@ -25,6 +25,8 @@ SRCS		= ft_memset.c \
 			  ft_striteri.c \
 			  ft_putstr_fd.c \
 			  ft_calloc.c \
+			  ft_strdup.c \
+			  ft_putnbr_fd.c \
 
 
 FLAGS		= -Wall -Werror -Wextra

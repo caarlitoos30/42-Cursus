@@ -6,7 +6,7 @@
 /*   By: calguaci <calguaci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/19 19:42:30 by calguaci          #+#    #+#             */
-/*   Updated: 2024/09/25 20:59:27 by calguaci         ###   ########.fr       */
+/*   Updated: 2024/09/26 22:39:48 by calguaci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ int					ft_isascii(int i);
 void				*ft_memset(void *b, int c, size_t len);
 int					ft_isalpha(int i);
 int					ft_isalnum(int i);
-int					ft_strncmp(char *s1, char *s2, size_t n);
+int					ft_strncmp(const char *s1, const char *s2, size_t n);
 unsigned int		ft_strlcpy(char *dest, char *src, size_t size);
 size_t				ft_strlcat(char *dest, char *src, size_t size);
 void				ft_bzero(void *str, size_t len);
@@ -42,5 +42,7 @@ void				ft_putendl_fd(char *s, int fd);
 void				ft_striteri(char *s, void (*f)(unsigned int, char*));
 void				ft_putstr_fd(char *s, int fd);
 void				*ft_calloc(size_t count, size_t size);
+char				*ft_strdup(const char *s1);
+void				ft_putnbr_fd(int n, int fd);
 
 #endif

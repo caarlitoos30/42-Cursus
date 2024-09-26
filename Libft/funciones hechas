@@ -10,10 +10,10 @@
 +memmove
 +strlcpy   +atoi
 +strlcat   +calloc
--strdup
++strdup
 
-remaining : 2
-done : 21
+remaining : 0
+done : 23
 
 SEGUNDA PARTE 
 

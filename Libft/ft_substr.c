@@ -6,7 +6,7 @@
 /*   By: calguaci <calguaci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/27 18:21:19 by calguaci          #+#    #+#             */
-/*   Updated: 2024/09/27 19:11:27 by calguaci         ###   ########.fr       */
+/*   Updated: 2024/09/27 20:43:30 by calguaci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	char	*str;
 
 	if (!s)
-		return (NULL);
+		return (0);
 	s_len = ft_strlen(s);
 	if (start > s_len)
 		return (ft_strdup(""));
@@ -28,8 +28,9 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	size = len + 1;
 	str = (char *) malloc(size * sizeof(char));
 	if (!str)
-		return (NULL);
+		return (0);
 	ft_memcpy(str, s + start, len);
 	str[len] = '\0';
 	return (str);
 }
+  

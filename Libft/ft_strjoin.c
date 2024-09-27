@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strjoin                                         :+:      :+:    :+:   */
+/*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: calguaci <calguaci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/27 22:25:08 by calguaci          #+#    #+#             */
-/*   Updated: 2024/09/27 22:27:05 by calguaci         ###   ########.fr       */
+/*   Updated: 2024/09/27 23:01:46 by calguaci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	str_len = (ft_strlen(s1) + ft_strlen(s2) + 1);
 	str = (char *)malloc(sizeof(char) * str_len);
 	if (!s1 || !s2 || !str)
-		return (NULL);
+		return (0);
 	i = 0;
 	while (*s1)
 		str[i++] = *s1++;

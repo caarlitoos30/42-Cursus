@@ -1,35 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_substr.c                                        :+:      :+:    :+:   */
+/*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: calguaci <calguaci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/27 18:21:19 by calguaci          #+#    #+#             */
-/*   Updated: 2024/09/27 21:08:04 by calguaci         ###   ########.fr       */
+/*   Created: 2024/09/27 21:02:04 by calguaci          #+#    #+#             */
+/*   Updated: 2024/09/27 22:15:43 by calguaci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_substr(char const *s, unsigned int start, size_t len)
+char	*ft_strtrim(char const *s1, char const *set)
 {
-	size_t	s_len;
-	size_t	size;
-	char	*str;
+	size_t		size_s1;
 
-	if (!s)
+	if (!s1 || !set)
 		return (0);
-	s_len = ft_strlen(s);
-	if (start > s_len)
-		return (ft_strdup(""));
-	if (start + len > s_len)
-		len = s_len - start;
-	size = len + 1;
-	str = (char *) malloc(size * sizeof(char));
-	if (!str)
-		return (0);
-	ft_memcpy(str, s + start, len);
-	str[len] = '\0';
-	return (str);
+	while (ft_strchr(set, *s1) && *s1 != '\0')
+		s1++;
+	size_s1 = ft_strlen((char *)s1);
+	while (ft_strchr(set, s1[size_s1]) && size_s1 != 0)
+		size_s1--;
+	return (ft_substr((char *)s1, 0, size_s1 + 1));
 }
+
+// int main(void)
+// {
+//     char *result = ft_strtrim("vavbHelloabv", "v");
+//     printf("'%s'\n", result);
+//     free(result);
+//     return 0;
+// }

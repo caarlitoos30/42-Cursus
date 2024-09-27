@@ -17,9 +17,9 @@ done : 23
 
 SEGUNDA PARTE 
 
--ft_substr
++ft_substr
 -ft_strjoin
--ft_strim
++ft_strtrim
 -ft_split
 -ft_itoa
 -ft_strmapi
@@ -29,5 +29,5 @@ SEGUNDA PARTE
 +ft_putendl_fd
 +ft_putnbr_fd
 
-remaining : 6
-done : 5
+remaining : 5
+done : 6

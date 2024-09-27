@@ -6,7 +6,7 @@
 /*   By: calguaci <calguaci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/19 19:42:30 by calguaci          #+#    #+#             */
-/*   Updated: 2024/09/26 22:39:48 by calguaci         ###   ########.fr       */
+/*   Updated: 2024/09/27 19:11:05 by calguaci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,5 +44,6 @@ void				ft_putstr_fd(char *s, int fd);
 void				*ft_calloc(size_t count, size_t size);
 char				*ft_strdup(const char *s1);
 void				ft_putnbr_fd(int n, int fd);
+char				*ft_substr(char const *s, unsigned int start, size_t len);
 
 #endif

@@ -27,6 +27,7 @@ SRCS		= ft_memset.c \
 			  ft_calloc.c \
 			  ft_strdup.c \
 			  ft_putnbr_fd.c \
+			  ft_substr.c \
 
 
 FLAGS		= -Wall -Werror -Wextra
@@ -38,9 +39,6 @@ all: $(NAME)
 $(NAME):
 	gcc $(FLAGS) -c $(SRCS) -I ./
 	ar rc $(NAME) $(OBJS)
-
-
-
 
 clean:
 	rm -f $(OBJS) 

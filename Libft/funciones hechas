@@ -27,7 +27,7 @@ SEGUNDA PARTE
 +ft_putchar_fd
 +ft_putstr_fd
 +ft_putendl_fd
--ft_putnbr_fd
++ft_putnbr_fd
 
-remaining : 7
-done : 4
+remaining : 6
+done : 5

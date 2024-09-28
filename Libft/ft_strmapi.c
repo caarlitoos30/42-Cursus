@@ -1,35 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strtrim.c                                       :+:      :+:    :+:   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: calguaci <calguaci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/27 21:02:04 by calguaci          #+#    #+#             */
-/*   Updated: 2024/09/28 13:17:27 by calguaci         ###   ########.fr       */
+/*   Created: 2024/09/28 12:33:23 by calguaci          #+#    #+#             */
+/*   Updated: 2024/09/28 13:12:51 by calguaci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strtrim(const char *s1, const char *set)
+char	*ft_strmapi(const char *s, char (*f)(unsigned int, char))
 {
-	size_t		size_s1;
+	char	*result;
+	size_t	len;
+	size_t	i;
 
-	if (!s1 || !set)
+	len = ft_strlen(s);
+	result = (char *)malloc(sizeof(char) * (len + 1));
+	if (result == 0)
 		return (0);
-	while (ft_strchr(set, *s1) && *s1 != '\0')
-		s1++;
-	size_s1 = ft_strlen((char *)s1);
-	while (ft_strchr(set, s1[size_s1]) && size_s1 != 0)
-		size_s1--;
-	return (ft_substr((char *)s1, 0, size_s1 + 1));
+	i = 0;
+	while (i < len)
+	{
+		result[i] = f(i, s[i]);
+		i++;
+	}
+	result[len] = '\0';
+	return (result);
 }
-
-// int main(void)
-// {
-//     char *result = ft_strtrim("vavbHelloabv", "v");
-//     printf("'%s'\n", result);
-//     free(result);
-//     return 0;
-// }

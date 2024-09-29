@@ -6,7 +6,7 @@
 /*   By: calguaci <calguaci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/19 19:42:30 by calguaci          #+#    #+#             */
-/*   Updated: 2024/09/28 13:16:36 by calguaci         ###   ########.fr       */
+/*   Updated: 2024/09/29 17:00:46 by calguaci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,5 +49,7 @@ char				*ft_substr(const char *s, unsigned int start, size_t len);
 char				*ft_strtrim(const char *s1, const char *set);
 char				*ft_strjoin(const char *s1, const char *s2);
 char				*ft_strmapi(const char *s, char (*f)(unsigned int, char));
+char				*ft_itoa(int n);
+char				**ft_split(char const *s, char c);
 
 #endif

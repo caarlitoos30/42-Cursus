@@ -27,23 +27,15 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	}
 	return (0);
 }
-//  #include <stdio.h>
 
 // int main()
 // {
-//     char str1[] = "abcdef";
-//     char str2[] = "abc\375xx";
-//     unsigned int n = 5;
-//     int result;
-
-//     result = ft_strncmp(str1, str2, n);
-
+//     int result = ft_strncmp("abcdef", "abc\375xx", 5);   
 //     if (result == 0)
-//         printf("The strings are equal up to the first %u characters.\n", n);
+//         ft_putstr_fd("Equal\n", 1);
 //     else if (result < 0)
-//         printf("First string is shorter to the first %u characters.\n", n);
+//         ft_putstr_fd("First string is shorter\n", 1);
 //     else
-//         printf("The first string is biggerto the first %u characters.\n", n);
-
+//         ft_putstr_fd("First string is bigger\n", 1);
 //     return 0;
 // }

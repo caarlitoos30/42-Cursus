@@ -6,7 +6,7 @@
 /*   By: calguaci <calguaci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/16 16:48:11 by calguaci          #+#    #+#             */
-/*   Updated: 2024/09/24 19:20:16 by calguaci         ###   ########.fr       */
+/*   Updated: 2024/09/30 20:08:07 by calguaci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,3 +30,14 @@ unsigned int	ft_strlcpy(char *dest, char *src, size_t size)
 		i++;
 	return (i);
 }
+
+// int	main(void)
+// {
+//     char dest[20];
+//     unsigned int length = ft_strlcpy(dest, "Pruebas, perrete", sizeof(dest));
+
+//     printf("Cadena copiada: %s\n", dest);
+//     printf("Longitud: %u\n", length);
+
+//     return (0);
+// }

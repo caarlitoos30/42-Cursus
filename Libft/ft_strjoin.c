@@ -6,7 +6,7 @@
 /*   By: calguaci <calguaci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/27 22:25:08 by calguaci          #+#    #+#             */
-/*   Updated: 2024/09/28 13:17:02 by calguaci         ###   ########.fr       */
+/*   Updated: 2024/09/30 20:36:45 by calguaci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,3 +30,11 @@ char	*ft_strjoin(const char *s1, const char *s2)
 	str[i] = 0;
 	return (str);
 }
+
+// int	main(void)
+// {
+//     char *result = ft_strjoin("Hola, ", "mundo!");
+//     ft_putstr_fd(result, 1);  
+//     free(result);
+//     return (0);
+// }

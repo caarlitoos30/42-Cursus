@@ -18,3 +18,11 @@ int	ft_toupper(int i)
 		return (i - 32);
 	return (i);
 }
+
+// int main(void)
+//  {
+//      char upper = 'g';
+//      char lower = ft_tolower(upper);
+//      printf("%c\n", lower);
+//      return 0;
+//  }

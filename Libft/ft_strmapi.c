@@ -6,7 +6,7 @@
 /*   By: calguaci <calguaci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/28 12:33:23 by calguaci          #+#    #+#             */
-/*   Updated: 2024/09/28 13:12:51 by calguaci         ###   ########.fr       */
+/*   Updated: 2024/09/30 20:40:35 by calguaci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,3 +31,16 @@ char	*ft_strmapi(const char *s, char (*f)(unsigned int, char))
 	result[len] = '\0';
 	return (result);
 }
+
+// char changec(unsigned int index, char c)
+// {
+//     return c + 1; 
+// }
+
+// int main(void)
+// {
+//     char *result = ft_strmapi("hola", changec); 
+//     printf("%s\n", result);
+//     free(result); 
+//     return 0;
+// }

@@ -6,7 +6,7 @@
 /*   By: calguaci <calguaci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/27 18:21:19 by calguaci          #+#    #+#             */
-/*   Updated: 2024/09/27 21:08:04 by calguaci         ###   ########.fr       */
+/*   Updated: 2024/09/30 20:32:13 by calguaci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,3 +33,11 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	str[len] = '\0';
 	return (str);
 }
+
+// int main()
+// {
+//     char *result = ft_substr("Hola, mundo!", 7, 5);
+//     ft_putstr_fd(result, 1);
+//     free(result);
+//     return 0;
+// }

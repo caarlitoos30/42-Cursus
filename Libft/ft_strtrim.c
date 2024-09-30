@@ -6,7 +6,7 @@
 /*   By: calguaci <calguaci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/27 21:02:04 by calguaci          #+#    #+#             */
-/*   Updated: 2024/09/28 13:17:27 by calguaci         ###   ########.fr       */
+/*   Updated: 2024/09/30 20:03:18 by calguaci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ char	*ft_strtrim(const char *s1, const char *set)
 
 // int main(void)
 // {
-//     char *result = ft_strtrim("vavbHelloabv", "v");
+//     char *result = ft_strtrim("vavbpruebavabv", "v");
 //     printf("'%s'\n", result);
 //     free(result);
 //     return 0;

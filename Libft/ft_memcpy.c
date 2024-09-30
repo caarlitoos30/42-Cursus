@@ -6,7 +6,7 @@
 /*   By: calguaci <calguaci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/21 14:25:05 by calguaci          #+#    #+#             */
-/*   Updated: 2024/09/30 18:44:18 by calguaci         ###   ########.fr       */
+/*   Updated: 2024/09/30 20:15:08 by calguaci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 
 // int main(void)
 // {
-//     char src[] = "hola buenos dias";
+//     char src[] = "";
 //     char dest[1];
 //     ft_memcpy(dest, src, ft_strlen(src) + 1);  
 //     printf("cadena dest: %s\n", dest);

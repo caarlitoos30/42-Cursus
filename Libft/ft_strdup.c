@@ -6,7 +6,7 @@
 /*   By: calguaci <calguaci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 19:25:06 by calguaci          #+#    #+#             */
-/*   Updated: 2024/09/26 19:38:16 by calguaci         ###   ########.fr       */
+/*   Updated: 2024/09/30 19:57:12 by calguaci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,3 +25,13 @@ char	*ft_strdup(const char *s1)
 		copy[len] = s1[len];
 	return (copy);
 }
+
+// int	main(void)
+// {
+//     char *str = ft_strdup("prueba prueba-!");
+
+//     ft_putstr_fd(str, 1);
+//     free(str);
+
+//     return (0);
+// }

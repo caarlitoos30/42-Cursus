@@ -33,15 +33,15 @@ static size_t	ft_ntokens(const char *s, char c)
 
 char	**ft_split(const char *s, char c)
 {
-	char	**ret;
+	char	**tok;
 	size_t	i;
 	size_t	len;
 
 	if (!s)
 		return (0);
 	i = 0;
-	ret = malloc(sizeof(char *) * (ft_ntokens(s, c) + 1));
-	if (!ret)
+	tok = malloc(sizeof(char *) * (ft_ntokens(s, c) + 1));
+	if (!tok)
 		return (0);
 	while (*s)
 	{
@@ -50,13 +50,13 @@ char	**ft_split(const char *s, char c)
 			len = 0;
 			while (*s && *s != c && ++len)
 				++s;
-			ret[i++] = ft_substr(s - len, 0, len);
+			tok[i++] = ft_substr(s - len, 0, len);
 		}
 		else
 			++s;
 	}
 	ret[i] = 0;
-	return (ret);
+	return (tok);
 }
 
 int main(void)

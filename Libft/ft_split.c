@@ -58,3 +58,11 @@ char	**ft_split(const char *s, char c)
 	ret[i] = 0;
 	return (ret);
 }
+
+int main(void)
+{
+    char **result = ft_split("Hola mundo", ' ');
+    printf("%s\n", result[0]);
+    printf("%s\n", result[1]);
+    return 0;
+}

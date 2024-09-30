@@ -6,7 +6,7 @@
 /*   By: calguaci <calguaci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 22:19:22 by calguaci          #+#    #+#             */
-/*   Updated: 2024/09/26 22:38:37 by calguaci         ###   ########.fr       */
+/*   Updated: 2024/09/30 19:38:49 by calguaci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,3 +33,9 @@ void	ft_putnbr_fd(int n, int fd)
 		ft_putchar_fd(n % 10 + '0', fd);
 	}
 }
+
+// int	main(void)
+// {
+//     ft_putnbr_fd(-12345, 1);
+//     return (0);
+// }

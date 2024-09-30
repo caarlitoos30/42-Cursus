@@ -24,3 +24,12 @@ void	*ft_memset(void *b, int c, size_t len)
 	}
 	return (b);
 }
+
+/* int main(void)
+{
+    char str[20] = "holaphola";
+    ft_memset(str, '*', 5); 
+    printf("%s\n", str);   
+    return 0;
+} 
+*/

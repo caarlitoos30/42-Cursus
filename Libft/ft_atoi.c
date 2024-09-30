@@ -6,7 +6,7 @@
 /*   By: calguaci <calguaci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/18 01:51:06 by calguaci          #+#    #+#             */
-/*   Updated: 2024/09/23 23:03:28 by calguaci         ###   ########.fr       */
+/*   Updated: 2024/09/30 18:39:48 by calguaci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,14 +35,9 @@ int	ft_atoi(const char *str)
 	return (val);
 }
 
-// #include <stdio.h>
-// int main() {
-//     char str[100];
-
-//     printf("Enter string: ");
-//     fgets(str, sizeof(str), stdin);
-//     int resultado = ft_atoi(str);
-//     printf("the converted entire is: %d\n", resultado);
-
+// int main(void) 
+// {
+//     int resultado = ft_atoi("12345"); 
+//     printf("%d\n", resultado);
 //     return 0;
 // }

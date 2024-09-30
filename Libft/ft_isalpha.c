@@ -18,3 +18,9 @@ int	ft_isalpha(int i)
 		return (1);
 	return (0);
 }
+
+// int main(void)
+// {
+//     ft_isalpha('A');
+//     return 0;
+// }

@@ -6,7 +6,7 @@
 /*   By: calguaci <calguaci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/29 15:04:27 by calguaci          #+#    #+#             */
-/*   Updated: 2024/09/29 18:40:53 by calguaci         ###   ########.fr       */
+/*   Updated: 2024/09/30 19:42:49 by calguaci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ static size_t	ft_ntokens(const char *s, char c)
 {
 	size_t	tok;
 
-	ret = 0;
+	tok = 0;
 	while (*s)
 	{
 		if (*s != c)
@@ -55,14 +55,17 @@ char	**ft_split(const char *s, char c)
 		else
 			++s;
 	}
-	ret[i] = 0;
+	tok[i] = 0;
 	return (tok);
 }
 
 // int main(void)
 // {
-//     char **result = ft_split("Hola mundo", ' ');
+//     char **result = ft_split("Hola mundo me llamo carlos", ' ');
 //     printf("%s\n", result[0]);
 //     printf("%s\n", result[1]);
+// 	printf("%s\n", result[2]);
+// 	printf("%s\n", result[3]);
+// 	printf("%s\n", result[4]);
 //     return 0;
 // }

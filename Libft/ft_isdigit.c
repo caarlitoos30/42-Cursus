@@ -16,3 +16,9 @@ int	ft_isdigit(int i)
 {
 	return (i >= 48 && i <= 57);
 }
+
+// int main(void)
+// {
+//     ft_isdigit('3');
+//     return 0;
+// }

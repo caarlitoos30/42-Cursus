@@ -6,7 +6,7 @@
 /*   By: calguaci <calguaci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/18 22:31:58 by calguaci          #+#    #+#             */
-/*   Updated: 2024/09/21 16:30:24 by calguaci         ###   ########.fr       */
+/*   Updated: 2024/09/30 18:27:06 by calguaci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,3 +19,9 @@ int	ft_isalnum(int i)
 		return (1);
 	return (0);
 }
+
+// int main(void)
+// {
+//     ft_isalnum('A');
+//     return 0;
+// }

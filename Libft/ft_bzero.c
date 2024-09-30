@@ -16,3 +16,11 @@ void	ft_bzero(void *str, size_t len)
 {
 	ft_memset(str, '\0', len);
 }
+
+// int main(void)
+// {
+//     char str[20] = "Hola Mundo";
+//     ft_bzero(str, 5);
+//     printf("%s\n", str); // Imprime la cadena resultante
+//     return 0;
+// }

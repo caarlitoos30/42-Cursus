@@ -6,7 +6,7 @@
 /*   By: calguaci <calguaci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/21 16:52:29 by calguaci          #+#    #+#             */
-/*   Updated: 2024/09/21 17:24:08 by calguaci         ###   ########.fr       */
+/*   Updated: 2024/09/30 18:31:26 by calguaci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,3 +25,9 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (0);
 }
+
+// int main(void)
+// {
+//     printf("%s\n", (char *)ft_memchr("Hola Mundo", 'M', 10));
+//     return 0;
+// }

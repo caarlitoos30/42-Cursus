@@ -59,10 +59,10 @@ char	**ft_split(const char *s, char c)
 	return (tok);
 }
 
-int main(void)
-{
-    char **result = ft_split("Hola mundo", ' ');
-    printf("%s\n", result[0]);
-    printf("%s\n", result[1]);
-    return 0;
-}
+// int main(void)
+// {
+//     char **result = ft_split("Hola mundo", ' ');
+//     printf("%s\n", result[0]);
+//     printf("%s\n", result[1]);
+//     return 0;
+// }

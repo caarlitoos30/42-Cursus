@@ -12,23 +12,23 @@
 
 #include "libft.h"
 
-static size_t	ft_toklen(const char *s, char c)
+static size_t	ft_ntokens(const char *s, char c)
 {
-	size_t	ret;
+	size_t	tok;
 
 	ret = 0;
 	while (*s)
 	{
 		if (*s != c)
 		{
-			++ret;
+			++tok;
 			while (*s && *s != c)
 				++s;
 		}
 		else
 			++s;
 	}
-	return (ret);
+	return (tok);
 }
 
 char	**ft_split(const char *s, char c)
@@ -40,7 +40,7 @@ char	**ft_split(const char *s, char c)
 	if (!s)
 		return (0);
 	i = 0;
-	ret = malloc(sizeof(char *) * (ft_toklen(s, c) + 1));
+	ret = malloc(sizeof(char *) * (ft_ntokens(s, c) + 1));
 	if (!ret)
 		return (0);
 	while (*s)

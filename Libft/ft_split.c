@@ -12,51 +12,95 @@
 
 #include "libft.h"
 
-static size_t	ft_ntokens(const char *s, char c)
-{
-	size_t	tok;
+#include "libft.h"
 
-	tok = 0;
-	while (*s)
-	{
-		if (*s != c)
-		{
-			++tok;
-			while (*s && *s != c)
-				++s;
-		}
-		else
-			++s;
-	}
-	return (tok);
+static int  count_words(char const *str, char delimiter)
+{
+    int     word_count;
+    int     in_word;
+
+    word_count = 0;
+    in_word = 0;
+    if (*str == '\0')
+        return (0);
+    while (*str != '\0')
+    {
+        if (*str == delimiter)
+            in_word = 0;
+        else if (in_word == 0)
+        {
+            in_word = 1;
+            word_count++;
+        }
+        str++;
+    }
+    return (word_count);
 }
 
-char	**ft_split(const char *s, char c)
+static int  count_chars(char const *str, char delimiter, int index)
 {
-	char	**tok;
-	size_t	i;
-	size_t	len;
+    int char_count;
 
-	if (!s)
-		return (0);
-	i = 0;
-	tok = malloc(sizeof(char *) * (ft_ntokens(s, c) + 1));
-	if (!tok)
-		return (0);
-	while (*s)
-	{
-		if (*s != c)
-		{
-			len = 0;
-			while (*s && *s != c && ++len)
-				++s;
-			tok[i++] = ft_substr(s - len, 0, len);
-		}
-		else
-			++s;
-	}
-	tok[i] = 0;
-	return (tok);
+    char_count = 0;
+    while (str[index] != delimiter && str[index] != '\0')
+    {
+        char_count++;
+        index++;
+    }
+    return (char_count);
+}
+
+static char **free_memory(char const **result, int idx)
+{
+    while (idx > 0)
+    {
+        idx--;
+        free((void *)result[idx]);
+    }
+    free(result);
+    return (NULL);
+}
+
+static char **fill_array(char const *str, char **result,
+                        char delimiter, int word_total)
+{
+    int i;
+    int j;
+    int k;
+
+    i = 0;
+    j = 0;
+    while (str[i] != '\0' && j < word_total)
+    {
+        k = 0;
+        while (str[i] == delimiter)
+            i++;
+        result[j] = (char *)malloc(
+                sizeof(char) * (count_chars(str, delimiter, i) + 1)
+                );
+        if (result[j] == NULL)
+            return (free_memory((char const **)result, j));
+        while (str[i] != '\0' && str[i] != delimiter)
+            result[j][k++] = str[i++];
+        result[j][k] = '\0';
+        j++;
+    }
+    result[j] = 0;
+    return (result);
+}
+
+char    **ft_split(char const *s, char c)
+{
+    char    **result;
+    int     word_count;
+
+    if (s == NULL)
+        return (NULL);
+    word_count = count_words(s, c);
+    result = (char **)malloc(sizeof(char *) * (word_count + 1));
+    if (result == NULL)
+        return (NULL);
+    return (fill_array(s, result, c, word_count));
 }
 
 // int main(void)
